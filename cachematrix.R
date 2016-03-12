@@ -7,7 +7,7 @@ makeCacheMatrix <- function(x = matrix()) {
         #create empty matrix to store inverted matrix
         i <- NULL
         
-        #set value of matrix
+        #pass the value of matrix
         set <- function(y){
                 x <<- y
                 i <<- NULL
@@ -18,9 +18,9 @@ makeCacheMatrix <- function(x = matrix()) {
                 x
         }
         
-        #set inverse of matrix
+        #pass the inverse of matrix
         setInverse <- function(solve){
-                i <<- solve(x)
+                i <<- solve
         }
         
         #get inverse of matrix
